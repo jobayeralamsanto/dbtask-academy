@@ -1,0 +1,105 @@
+/*====================================================*/
+
+
+/*=== fonts ====*/
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900");
+
+/*====================================================*/
+
+body {
+    font-family: 'Poppins', sans-serif;
+    padding-top: 80px;
+}
+
+.h-16 {
+    height: 16px;
+}
+
+.w-16 {
+    width: 16px;
+}
+
+.w-150 {
+    width: 150px;
+}
+
+.pt-100 {
+    padding-top: 100px;
+}
+
+.py-50 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.p-17 {
+    padding: 17px;
+}
+
+.background-1 {
+    background: rgb(220, 232, 223);
+    background: linear-gradient(97deg, rgba(220, 232, 223, 1) 0%, rgba(255, 255, 255, 1) 50%);
+}
+
+
+/* .banner-height {
+    height: calc(100vh - 255px);
+    display: flex;
+    align-items: center;
+} */
+
+.banner-title {
+    font-weight: 600;
+    /* line-height: 55px; */
+}
+
+.banner-text {
+    font-size: 18px;
+}
+
+.banner-btn {
+    padding: 15px;
+    font-size: 16px;
+}
+
+.course-btn {
+    padding: 5px 16px;
+    font-size: 14px;
+    border-radius: 0px;
+}
+
+.course-graphics {
+    font-size: 13px;
+    background: #DEFFEC;
+    padding: 5px;
+    width: 50%;
+    align-items: center;
+    display: flex;
+    color: #1DAA86;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.course-text {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+@media (min-width: 1200px) {
+    .pr-100 {
+        padding-right: 100px;
+    }
+}
+
+@media (max-width: 991px) {
+    .pt-100 {
+        padding-top: 30px;
+    }
+}
+
+figure img {
+    width: 100%;
+    max-width: 100%;
+    height: auto!important;
+}
