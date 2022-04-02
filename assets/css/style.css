@@ -81,6 +81,42 @@ body {
     justify-content: center;
 }
 
+.course-web {
+    font-size: 13px;
+    background: #E5F1FF;
+    padding: 5px;
+    width: 50%;
+    align-items: center;
+    display: flex;
+    color: #06417B;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.course-laravel {
+    font-size: 13px;
+    background: #FFE2E3;
+    padding: 5px;
+    width: 50%;
+    align-items: center;
+    display: flex;
+    color: #F3121B;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.course-motion {
+    font-size: 13px;
+    background: #DED5FC;
+    padding: 5px;
+    width: 50%;
+    align-items: center;
+    display: flex;
+    color: #6940F5;
+    border-radius: 10px;
+    justify-content: center;
+}
+
 .course-text {
     font-size: 18px;
     font-weight: 700;
