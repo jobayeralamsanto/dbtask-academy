@@ -73,7 +73,7 @@ body {
     font-size: 13px;
     background: #DEFFEC;
     padding: 5px;
-    width: 50%;
+    width: 60%;
     align-items: center;
     display: flex;
     color: #1DAA86;
@@ -85,7 +85,7 @@ body {
     font-size: 13px;
     background: #E5F1FF;
     padding: 5px;
-    width: 50%;
+    width: 60%;
     align-items: center;
     display: flex;
     color: #06417B;
@@ -97,7 +97,7 @@ body {
     font-size: 13px;
     background: #FFE2E3;
     padding: 5px;
-    width: 50%;
+    width: 60%;
     align-items: center;
     display: flex;
     color: #F3121B;
@@ -109,10 +109,58 @@ body {
     font-size: 13px;
     background: #DED5FC;
     padding: 5px;
-    width: 50%;
+    width: 60%;
     align-items: center;
     display: flex;
     color: #6940F5;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.course-ccna {
+    font-size: 13px;
+    background: #FFD8DA;
+    padding: 5px;
+    width: 60%;
+    align-items: center;
+    display: flex;
+    color: #EE161C;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.course-webdev {
+    font-size: 13px;
+    background: #FCEEDB;
+    padding: 5px;
+    width: 60%;
+    align-items: center;
+    display: flex;
+    color: #EB9100;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.course-appdev {
+    font-size: 13px;
+    background: #E2ECFF;
+    padding: 5px;
+    width: 60%;
+    align-items: center;
+    display: flex;
+    color: #1163E8;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.course-reactdev {
+    font-size: 13px;
+    background: #DEFAFF;
+    padding: 5px;
+    width: 60%;
+    align-items: center;
+    display: flex;
+    color: #07BBD8;
     border-radius: 10px;
     justify-content: center;
 }
