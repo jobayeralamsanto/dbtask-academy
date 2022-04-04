@@ -19,3 +19,27 @@
  const closeSideNav = () => mainNavigation.classList.remove("active");
  toggler.addEventListener("click", openSideNav);
  overlay.addEventListener("click", closeSideNav);
+
+ //  script for owl carousel 
+ $('.owl-carousel').owlCarousel({
+     loop: true,
+     margin: 10,
+     responsiveClass: true,
+     dots: true,
+
+     responsive: {
+         0: {
+             items: 1,
+             dots: true
+         },
+         768: {
+             items: 2,
+             dots: true
+         },
+         1000: {
+             items: 3,
+             dots: true,
+             loop: false
+         }
+     }
+ })

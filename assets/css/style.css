@@ -28,18 +28,34 @@ body {
     padding-top: 100px;
 }
 
-.py-50 {
-    padding-top: 50px;
-    padding-bottom: 50px;
+.pb-75 {
+    padding-bottom: 75px;
+}
+
+.py-6 {
+    padding-top: 5rem!important;
+    padding-bottom: 4.5rem!important
 }
 
 .p-17 {
     padding: 17px;
 }
 
+.ls-5 {
+    letter-spacing: 5px;
+}
+
+.lh-28 {
+    line-height: 28px;
+}
+
 .background-1 {
     background: rgb(220, 232, 223);
     background: linear-gradient(97deg, rgba(220, 232, 223, 1) 0%, rgba(255, 255, 255, 1) 50%);
+}
+
+.background-2 {
+    background: #F7F7F7;
 }
 
 
@@ -168,6 +184,46 @@ body {
 .course-text {
     font-size: 18px;
     font-weight: 700;
+}
+
+.bg-dot.primary {
+    background-image: radial-gradient(#5293E1 6px, transparent 6.5px);
+    position: absolute;
+    background-size: 2.75rem 2.75rem;
+    opacity: 1.4;
+    width: 12rem!important;
+    height: 10rem!important;
+}
+
+.sahpe {
+    height: 290px!important;
+}
+
+.choose-title {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.testimonial-title {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.testimonial-block {
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: inset 0px 0px 11px 2px rgb(205 203 203 / 26%);
+}
+
+.testimonial-img {
+    height: 70px;
+    width: 70px!important;
+}
+
+.testimonial-feedback {
+    margin-bottom: 6px;
+    font-size: 19px;
+    font-weight: 500;
 }
 
 @media (min-width: 1200px) {
