@@ -43,3 +43,37 @@
          }
      }
  })
+
+ /* Brand Slider Start */
+ $('.brand_slider_container').slick({
+         slidesToShow: 6,
+         slidesToScroll: 1,
+         autoplay: true,
+         autoplaySpeed: 2000,
+         loop: true,
+         arrows: false,
+         prevArrow: '<i class="fas fa-chevron-left slider_arrow slider_arrow_left"></i>',
+         nextArrow: '<i class="fas fa-chevron-right slider_arrow slider_arrow_right"></i>',
+         responsive: [{
+             breakpoint: 1025,
+             settings: {
+                 slidesToShow: 3,
+                 slidesToScroll: 3,
+                 infinite: true,
+                 dots: false
+             }
+         }, {
+             breakpoint: 768,
+             settings: {
+                 slidesToShow: 2,
+                 slidesToScroll: 2
+             }
+         }, {
+             breakpoint: 520,
+             settings: {
+                 slidesToShow: 1,
+                 slidesToScroll: 1
+             }
+         }]
+     })
+     /* //Brand Slider End */
