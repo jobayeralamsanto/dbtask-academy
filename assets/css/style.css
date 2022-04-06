@@ -70,6 +70,23 @@ body {
     font-size: 20px;
 }
 
+.fs-18 {
+    font-size: 18px;
+}
+
+.fs-36 {
+    font-size: 36px;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.st-text {
+    text-decoration: none;
+    color: #212529;
+}
+
 .background-1 {
     background: rgb(220, 232, 223);
     background: linear-gradient(97deg, rgba(220, 232, 223, 1) 0%, rgba(255, 255, 255, 1) 50%);
@@ -89,7 +106,6 @@ body {
 
 .line {
     width: 150px;
-    width: 150px;
     margin-left: 4px;
     text-align: center;
 }
@@ -101,6 +117,32 @@ body {
     height: 10px;
     background-repeat: no-repeat;
     background-position: center bottom;
+}
+
+.line-1 {
+    margin-left: 0px;
+}
+
+.line-1::after {
+    content: "";
+    display: block;
+    background-image: url('/assets/images/Path\ 116.png');
+    height: 10px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+
+.line-2 {
+    margin-left: 0px;
+}
+
+.line-2::after {
+    content: "";
+    display: block;
+    background-image: url('/assets/images/Path\ 117.png');
+    height: 10px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
 }
 
 
@@ -218,7 +260,7 @@ body {
     font-size: 13px;
     background: #DEFAFF;
     padding: 5px;
-    width: 60%;
+    width: 65%;
     align-items: center;
     display: flex;
     color: #07BBD8;
@@ -442,6 +484,17 @@ body {
     padding: 0px 5px;
 }
 
+.contact {
+    padding: 97px 70px;
+    border-radius: 25px;
+}
+
+@media (max-width: 580px) {
+    .contact {
+        padding: 70px 25px;
+    }
+}
+
 @media (min-width: 1200px) {
     .pr-100 {
         padding-right: 100px;
@@ -451,6 +504,15 @@ body {
 @media (max-width: 991px) {
     .pt-100 {
         padding-top: 30px;
+    }
+    .w-40 {
+        width: 40%;
+    }
+}
+
+@media (min-width: 768px) {
+    .border-md-end {
+        border-right: 1px solid #dee2e6!important;
     }
 }
 
