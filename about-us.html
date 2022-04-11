@@ -149,21 +149,21 @@
             <div class="mb-5">
                 <h2 class="fs-35 fw-600 text-center">Strength in <span class="text-success line"> Numbers</span> </h2>
             </div>
-            <div class="row">
+            <div class="row" id="counters_3">
                 <div class="col-6 col-md-3 mb-3 text-center border-end">
-                    <h3 class="fs-36 fw-600">23M +</h3>
+                    <h3 class="fs-36 fw-600 counter" data-TargetNum="23" data-Speed="3000">0</h3>
                     <p>Learners & counting</p>
                 </div>
                 <div class="col-6 col-md-3 mb-3 text-center border-md-end">
-                    <h3 class="fs-36 fw-600">130k +</h3>
+                    <h3 class="fs-36 fw-600 counter" data-TargetNum="130" data-Speed="3000">0</h3>
                     <p>Total courses</p>
                 </div>
                 <div class="col-6 col-md-3 mb-3 text-center border-end">
-                    <h3 id="counter" class="fs-36 fw-600">36 +</h3>
+                    <h3 class="fs-36 fw-600 counter" data-TargetNum="36" data-Speed="3000">0</h3>
                     <p>Languages</p>
                 </div>
                 <div class="col-6 text-center mb-3 col-md-3">
-                    <h3 class="fs-36 fw-600">89 +</h3>
+                    <h3 class="fs-36 fw-600 counter" data-TargetNum="89" data-Speed="3000">0</h3>
                     <p>Successful students</p>
                 </div>
             </div>
@@ -177,10 +177,18 @@
                 <h2 class="fs-35 fw-600">Bacademy <span class="text-success line"> Portfolio</span> </h2>
             </div>
             <div class="row">
-                <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="col-md-6 col-lg-4 col-xl-3 portfolio">
+
                     <figure>
                         <img src="./assets/images/protfolio/protfolio-1.png" alt="">
                     </figure>
+                    <div class="overlay">
+                        <span>Hello</span>
+                    </div>
+
+                    <!-- <figure>
+                        <img src="./assets/images/protfolio/protfolio-1.png" alt="">
+                    </figure> -->
                 </div>
                 <div class="col-md-6 col-lg-4 col-xl-3">
                     <figure>
@@ -193,9 +201,19 @@
                     </div> -->
                 </div>
                 <div class="col-md-6 col-lg-4 col-xl-3">
-                    <figure>
+                    <!-- <figure>
                         <img src="./assets/images/protfolio/protfolio-3.png" alt="">
-                    </figure>
+                    </figure> -->
+                    <div class="profile-card">
+                        <div class="profile-img">
+                            <img src="./assets/images/protfolio/protfolio-3.png" alt="">
+                        </div>
+                        <div class="profile-content">
+                            <h2 class="title">Marco
+                                <span>Designer & Developer</span>
+                            </h2>
+                        </div>
+                    </div>
 
                 </div>
                 <div class="col-md-6 col-lg-4 col-xl-3">
@@ -337,7 +355,7 @@
     <!-- coustom script -->
     <script src="assets/js/script.js"></script>
     <!-- count js -->
-    <script src="assets/js/countMe.min.js"></script>
+    <script src="assets/js/multi-animated-counter.js"></script>
     <script>
         // $(selector).countMe(delay,speed)
         // $("#counter").countMe(60, 100);
