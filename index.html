@@ -85,9 +85,9 @@
                 <div class="row">
                     <div class="col-12 col-lg-6">
                         <div class="pr-100 pt-2 pt-lg-3 pt-xxl-5">
-                            <p class="text-success">The Leader in Online Learning</p>
-                            <h1 class="banner-title mb-2 mb-lg-4">Bulid An Incredible Learning Experiance</h1>
-                            <p class="banner-text mb-3 mb-lg-4">The right mentoring relationship can be a powerful tool for Professional growth. Bark up the right tree.</p>
+                            <p id="demo" class="text-success">The Leader in Online Learning</p>
+                            <h1 class="element banner-title mb-2 mb-lg-4">Bulid An Incredible Learning Experiance</h1>
+                            <p class="ex1 banner-text mb-3 mb-lg-4">The right mentoring relationship can be a powerful tool for Professional growth. Bark up the right tree.</p>
                             <a href="" class="btn btn-success banner-btn mb-5 mb-lg-0 ">Explore Courses</a>
                         </div>
                     </div>
@@ -105,7 +105,7 @@
         <div class="container py-6">
             <div class="row pb-75">
                 <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-start align-items-center mb-4 mb-md-0">
-                    <h2 class="mb-0 fs-35 fw-600 quote">Academy <span class="line"> Courses</span></h2>
+                    <h2 class=" mb-0 fs-35 fw-600 quote">Academy <span class="element line"> Courses</span></h2>
                 </div>
                 <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-end">
                     <a href="" class="btn btn-success course-btn d-flex align-items-center">More Courses</a>
@@ -202,7 +202,7 @@
         <div class="container py-6">
             <div class="row align-items-center">
                 <div class="col-lg-5 ">
-                    <h2 class="fs-35 lh-52 fw-600">Why Students <span class="line w-auto">Choose Us</span> <br class="d-none d-md-block"> for Gain Their Knowledge</h2>
+                    <h2 class="fs-35 lh-52 fw-600">Why Students <span class="line w-auto element">Choose Us</span> <br class="d-none d-md-block"> for Gain Their Knowledge</h2>
                     <p class="mb-4">Helping employees gain skills and providing career development often take a back seat to business priorities but workplace better right now. Seventy percent of workers think that.</p>
                     <ul class="mb-4 list-unstyled">
                         <div class="d-flex align-items-center">
@@ -612,6 +612,7 @@
     <script src="assets/js/jquery.min.js"></script>
     <!-- Bootstrap Js -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/curvy-text.js"></script>
     <!-- Wow Js -->
     <script src="assets/js/wow.min.js"></script>
     <!-- owl carousel -->
@@ -620,73 +621,38 @@
     <script src="assets/js/slick.min.js"></script>
     <!-- coustom script -->
     <script src="assets/js/script.js"></script>
-    <script src="assets/js/gsap.min.js"></script>
-    <script src="assets/js/TextPlugin.js"></script>
+    <!-- text animation -->
+    <script src="assets/js/textyle.min.js"></script>
+
+
     <script>
-        const quotes = document.querySelectorAll(".quote");
-
-        function setupSplits() {
-            quotes.forEach(quote => {
-                // Reset if needed
-                if (quote.anim) {
-                    quote.anim.progress(1).kill();
-                    quote.split.revert();
+        $(window).on('load', function() {
+            //simple use
+            $('.ex1').textyle();
+            $('.desc').textyle();
+            //you can select options or add callback
+            $('.ex2').textyle({
+                duration: 400,
+                delay: 100,
+                easing: 'swing',
+                callback: function() {
+                    $(this).css({
+                        color: 'coral',
+                        transition: '1s',
+                    });
+                    $('.desc').css('opacity', 1);
                 }
-
-                quote.split = new SplitText(quote, {
-                    type: "lines,words,chars",
-                    linesClass: "split-line"
-                });
-
-                // Set up the anim
-                quote.anim = gsap.from(quote.split.chars, {
-                    scrollTrigger: {
-                        trigger: quote,
-                        toggleActions: "restart pause resume reverse",
-                        start: "top 50%",
-                    },
-                    duration: 0.6,
-                    ease: "circ.out",
-                    y: 80,
-                    stagger: 0.02,
-                });
             });
-        }
-
-        ScrollTrigger.addEventListener("refresh", setupSplits);
-        setupSplits();
+        });
+    </script>
+    <script>
+        $('.element').curvy({ in: {
+                effect: 'curveIn'
+            },
+            type: 'word'
+        });
     </script>
 
-    <!-- <script>
-        gsap.registerPlugin(SplitText);
-
-        var tl = gsap.timeline(),
-            mySplitText = new SplitText("#quote", {
-                type: "words,chars"
-            }),
-            chars = mySplitText.chars; //an array of all the divs that wrap each character
-
-        gsap.set("#quote", {
-            perspective: 400
-        });
-
-        console.log(chars);
-
-        tl.from(chars, {
-            duration: 0.8,
-            opacity: 0,
-            scale: 0,
-            y: 80,
-            rotationX: 180,
-            transformOrigin: "0% 50% -50",
-            ease: "back",
-            stagger: 0.01
-        });
-
-        document.getElementById("animate").onclick = function() {
-            tl.restart();
-        };
-    </script> -->
 
 </body>
 

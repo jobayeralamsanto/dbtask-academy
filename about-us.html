@@ -83,7 +83,7 @@
         <div class="container py-6">
             <div class="row">
                 <div class="col-12">
-                    <h1 class="text-center">About Us</h1>
+                    <h1 class="ex1 text-center">About Us</h1>
                     <ul class="list-unstyled d-flex justify-content-center align-items-center">
                         <li><a href="index.html" class="fs-18 st-text">Home</a></li>
                         <li class="mx-2"><i class="fas fa-angle-right"></i></li>
@@ -384,6 +384,29 @@
     <script src="assets/js/script.js"></script>
     <!-- count js -->
     <script src="assets/js/multi-animated-counter.js"></script>
+    <!-- text animation -->
+    <script src="assets/js/textyle.min.js"></script>
+
+    <script>
+        $(window).on('load', function() {
+            //simple use
+            $('.ex1').textyle();
+            $('.desc').textyle();
+            //you can select options or add callback
+            $('.ex2').textyle({
+                duration: 4000,
+                delay: 1000,
+                easing: 'swing',
+                callback: function() {
+                    $(this).css({
+                        color: 'coral',
+                        transition: '3s',
+                    });
+                    $('.desc').css('opacity', 1);
+                }
+            });
+        });
+    </script>
     <script>
         // $(selector).countMe(delay,speed)
         // $("#counter").countMe(60, 100);
