@@ -13,7 +13,8 @@
     <link rel="shortcut icon" href="assets/images/icon/favicon.png">
     <!-- Bootstrap CSS -->
     <link type="text/css" rel="stylesheet" href="assets/css/bootstrap.min.css" />
-
+    <!-- Animate CSS -->
+    <link type="text/css" rel="stylesheet" href="assets/css/aos.css" />
     <!-- Custom CSS -->
     <link type="text/css" rel="stylesheet" href="assets/css/style.css" />
 
@@ -77,7 +78,7 @@
         <div class="container py-6">
             <div class="row">
                 <div class="col-12">
-                    <h1 class="text-center">Contact Page</h1>
+                    <h1 class="text-center" data-aos="fade-down" data-aos-duration="1200" data-aos-delay="50">Contact Page</h1>
                     <ul class="list-unstyled d-flex justify-content-center align-items-center">
                         <li><a href="index.html" class="fs-18 st-text">Home</a></li>
                         <li class="mx-2"><i class="fas fa-angle-right"></i></li>
@@ -92,21 +93,20 @@
     <section>
         <div class="container py-6">
             <div class="row">
-                <div class="col-12 col-lg-6 mb-3">
+                <div class="col-12 col-lg-6 mb-3" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="100">
                     <div class="map">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3649.696066934295!2d90.41879721450367!3d23.829404491671625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8a4136c4b61%3A0x19549f5462616f04!2sBdtask%20Limited%20-%20Best%20Software%20Company%20in%20Bangladesh!5e0!3m2!1sen!2sbd!4v1648449461297!5m2!1sen!2sbd"
                             height="450" style="border:0; border-radius: 25px; width:-webkit-fill-available ;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                     <!-- /.map -->
                 </div>
-                <div class="col-12 col-lg-6 mb-3">
+                <div class="col-12 col-lg-6 mb-3" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="100">
                     <div class="contact background-2">
                         <h4 class="line-1 mb-3">Address</h4>
                         <p class="mb-4">B-25, Mannan Plaza, 4th Floor Khilkhet,<br> Dhaka-1229, Bangladesh</p>
                         <h4 class="line-2 w-auto text-start mb-3">Phone & Email</h4>
                         <p class="mb-3"><img class="h-23 w-23" src="./assets/images/icon/phone.png" alt="">&nbsp; + 880 162 4666000</p>
                         <p class="mb-3"><img class="h-16 w-23" src="./assets/images/icon/mail.png" alt=""> &nbsp;<a class="footer-text" href="">info@bdtaskacademy.com</a></p>
-
                     </div>
                 </div>
             </div>
@@ -213,8 +213,13 @@
     <script src="assets/js/jquery.min.js"></script>
     <!-- Bootstrap Js -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Animation Js -->
+    <script src="assets/js/aos.js"></script>
     <!-- coustom script -->
     <script src="assets/js/script.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 
