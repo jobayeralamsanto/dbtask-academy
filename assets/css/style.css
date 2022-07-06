@@ -24,6 +24,9 @@ body {
 .h-23 {
     height: 23px;
 }
+.h-115{
+    height: 115px;
+}
 
 .w-13 {
     width: 13rem;
@@ -35,6 +38,9 @@ body {
 
 .w-23 {
     width: 23px;
+}
+.w-125{
+    width: 125px;
 }
 
 .w-150 {
@@ -700,3 +706,7 @@ figure img {
     font-size: 14px;
     text-transform: capitalize;
 }
+
+.moretext {
+    display: none;
+  }
